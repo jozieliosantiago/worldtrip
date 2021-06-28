@@ -1,5 +1,6 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
 import { Header } from '../components/Header';
+import { TravelType } from '../components/TravelType';
 
 export default function Home() {
   return (
@@ -12,11 +13,12 @@ export default function Home() {
         backgroundSize="cover"
         w="100%"
         position="relative"
-        paddingLeft="8"
-        paddingRight="8"
+        paddingLeft="40"
+        paddingRight="40"
         paddingTop="8"
         paddingBottom="8"
         align="center"
+        h="46vh"
       >
         <Flex
           w="100%"
@@ -24,8 +26,6 @@ export default function Home() {
           direction="column"
           position="relative"
           justify="center"
-          paddingLeft="40"
-          paddingRight="40"
         >
           <Text position="relative" fontSize="48px" as="h1">
             5 Continentes, infinitas possibilidades.
@@ -44,6 +44,51 @@ export default function Home() {
           }}
         >
           <Image w="550px" src="./images/airplane.svg" alt="airplane" />
+        </Flex>
+      </Flex>
+
+      <Flex
+        w="100%"
+        h="46vh"
+        paddingLeft="40"
+        paddingRight="40"
+        align="center"
+        justify="space-between"
+      >
+        <Flex>
+          <TravelType
+            srcImage="./images/cocktail.svg"
+            text="vida noturna"
+            alt="cocktail"
+          />
+        </Flex>
+
+        <Flex>
+          <TravelType srcImage="./images/surf.svg" text="praia" alt="praia" />
+        </Flex>
+
+        <Flex>
+          <TravelType
+            srcImage="./images/building.svg"
+            text="moderno"
+            alt="moderno"
+          />
+        </Flex>
+
+        <Flex>
+          <TravelType
+            srcImage="./images/museum.svg"
+            text="clássico"
+            alt="clássico"
+          />
+        </Flex>
+
+        <Flex>
+          <TravelType
+            srcImage="./images/earth.svg"
+            text="e mais..."
+            alt="mais"
+          />
         </Flex>
       </Flex>
     </>
