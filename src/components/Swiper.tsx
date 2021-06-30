@@ -2,6 +2,7 @@ import { Box, Image, Flex, Text } from '@chakra-ui/react';
 
 import { Swiper as SwiperReact, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
+  Autoplay,
   Keyboard,
   Mousewheel,
   Navigation,
@@ -13,7 +14,7 @@ import 'swiper/components/navigation/navigation.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 
 export function Swiper() {
-  SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
+  SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
   return (
     <SwiperReact
@@ -26,6 +27,10 @@ export function Swiper() {
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
     >
       <SwiperSlide>
         <Flex h="60vh" justify="center" align="center" overflow="hidden">
