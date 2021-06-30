@@ -1,6 +1,8 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import { Header } from '../components/Header';
 import { TravelType } from '../components/TravelType';
+
+import { Swiper } from '../components/Swiper';
 
 export default function Home() {
   return (
@@ -49,7 +51,7 @@ export default function Home() {
 
       <Flex
         w="100%"
-        h="46vh"
+        h="44vh"
         paddingLeft="40"
         paddingRight="40"
         align="center"
@@ -90,6 +92,32 @@ export default function Home() {
             alt="mais"
           />
         </Flex>
+      </Flex>
+
+      <Flex
+        justify="center"
+        direction="column"
+        align="center"
+        paddingBottom="20"
+      >
+        <Box w="100px" mb="60px" borderTop="solid" borderColor="dark.900" />
+
+        <Box textAlign="center" fontSize="40px" color="dark.900">
+          <Text as="h2">Vamos nessa?</Text>
+          <Text as="h2">Então escolha seu continente</Text>
+        </Box>
+
+        <Box
+          w="100%"
+          h="60vh"
+          overflow="hidden"
+          position="relative"
+          paddingLeft="40"
+          paddingRight="40"
+          marginTop="10"
+        >
+          <Swiper />
+        </Box>
       </Flex>
     </>
   );
