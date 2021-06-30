@@ -1,4 +1,4 @@
-import { Box, Image, Flex, Text } from '@chakra-ui/react';
+import { Image, Flex, Text } from '@chakra-ui/react';
 
 import { Swiper as SwiperReact, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
