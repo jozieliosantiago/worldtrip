@@ -9,7 +9,7 @@ export default function Continent() {
     <>
       <Header />
       <Flex
-        h="60vh"
+        h={['25vh', '60vh']}
         w="100%"
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
@@ -17,13 +17,20 @@ export default function Continent() {
         bgPosition="center"
         position="relative"
       >
-        <Flex position="absolute" w="100%" h="100%" bg="#1c14017a">
+        <Flex
+          position="absolute"
+          w="100%"
+          h="100%"
+          bg="#1c140159"
+          justify="center"
+          align="center"
+        >
           <Text
-            position="absolute"
-            bottom="20"
-            left="40"
+            position={['relative', 'absolute']}
+            bottom={['auto', '20']}
+            left={['auto', '40']}
             as="h1"
-            fontSize="50"
+            fontSize={['30', 50]}
             fontWeight="600"
             color="light.200"
           >
@@ -34,14 +41,19 @@ export default function Continent() {
 
       <Flex
         justify="space-between"
-        paddingLeft="40"
-        paddingRight="40"
-        paddingTop="20"
-        paddingBottom="20"
+        paddingLeft={['8', '40']}
+        paddingRight={['8', '40']}
+        paddingTop={['8', '20']}
+        paddingBottom={['8', '20']}
         w="100%"
+        direction={['column', 'row']}
       >
-        <Flex w="45%" alignItems="center" justify="center">
-          <Text textAlign="justify" fontSize="24" lineHeight="48px">
+        <Flex w={['100%', '45%']} alignItems="center" justify="center">
+          <Text
+            textAlign="justify"
+            fontSize={['14', '24']}
+            lineHeight={['auto', '48px']}
+          >
             A Europa é, por convenção, um dos seis continentes do mundo.
             Compreendendo a península ocidental da Eurásia, a Europa geralmente
             divide-se da Ásia a leste pela divisória de águas dos montes Urais,
@@ -49,53 +61,104 @@ export default function Continent() {
           </Text>
         </Flex>
 
-        <Flex w="45%" justify="space-between" align="center">
-          <Flex align="center" direction="column" margin="8">
-            <Text as="h3" fontWeight="500" fontSize="70" color="golden.500">
+        <Flex
+          w={['100%', '45%']}
+          justify="space-between"
+          align="center"
+          paddingTop={{
+            base: '20px',
+          }}
+        >
+          <Flex
+            align={['flex-start', 'center']}
+            direction="column"
+            margin={['0', '8']}
+          >
+            <Text
+              as="h3"
+              fontWeight="500"
+              fontSize={['30', '70']}
+              color="golden.500"
+            >
               50
             </Text>
-            <Text as="p" fontSize="26" color="dark.900" fontWeight="bold">
+            <Text
+              as="p"
+              fontSize={['14', '26']}
+              color="dark.900"
+              fontWeight={['normal', 'bold']}
+            >
               países
             </Text>
           </Flex>
-          <Flex align="center" direction="column" margin="8">
-            <Text as="h3" fontWeight="500" fontSize="70" color="golden.500">
+
+          <Flex
+            align={['flex-start', 'center']}
+            direction="column"
+            margin={['0', '8']}
+          >
+            <Text
+              as="h3"
+              fontWeight="500"
+              fontSize={['30', '70']}
+              color="golden.500"
+            >
               60
             </Text>
-            <Text as="p" fontSize="26" color="dark.900" fontWeight="bold">
+            <Text
+              as="p"
+              fontSize={['14', '26']}
+              color="dark.900"
+              fontWeight={['normal', 'bold']}
+            >
               línguas
             </Text>
           </Flex>
-          <Flex align="center" direction="column" margin="8">
-            <Text as="h3" fontWeight="500" fontSize="70" color="golden.500">
-              27
+          <Flex
+            align={['flex-start', 'center']}
+            direction="column"
+            margin={['0', '8']}
+          >
+            <Text
+              as="h3"
+              fontWeight="500"
+              fontSize={['30', '70']}
+              color="golden.500"
+            >
+              24
             </Text>
             <Flex justify="center" align="center">
               <Text
                 pr="1"
                 as="p"
-                fontSize="26"
+                fontSize={['14', '26']}
                 color="dark.900"
-                fontWeight="bold"
+                fontWeight={['normal', 'bold']}
               >
                 cidades +100
               </Text>
-              <Tooltip label="Mais informações sobre as cidades" fontSize="md">
-                <FiInfo fontSize="18px" />
+              <Tooltip label="Mais informações sobre as cidades">
+                <FiInfo />
               </Tooltip>
             </Flex>
           </Flex>
         </Flex>
       </Flex>
 
-      <Flex w="100%" pl="40" pr="40" direction="column" pb="20">
-        <Text as="h2" color="dark.900" fontSize="40">
+      <Flex
+        w="100%"
+        pl={['8', '40']}
+        pr={['8', '40']}
+        direction="column"
+        pb={['10', '20']}
+      >
+        <Text as="h2" color="dark.900" fontSize={['20', '40']}>
           Cidades +100
         </Text>
 
         <Grid
-          templateColumns="repeat(4, 1fr)"
-          pt="20"
+          templateColumns={['repeat(1, 1fr)', 'repeat(4, 1fr)']}
+          pt={['5', '20']}
           w="100%"
           gap={6}
           rowGap={12}

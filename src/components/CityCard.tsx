@@ -16,14 +16,15 @@ export function CityCard({
   return (
     <Flex
       h="38vh"
-      w="18vw"
+      w={['100%', '18vw']}
       direction="column"
       borderRadius="5"
       overflow="hidden"
+      align="center"
     >
       <Flex
         h="60%"
-        w="100%"
+        w={['85%', '100%']}
         backgroundImage={cityImageURL}
         backgroundSize="100% auto"
         backgroundPosition="center"
@@ -31,6 +32,8 @@ export function CityCard({
       ></Flex>
 
       <Flex
+        // flex="1"
+        w={['85%', '100%']}
         justify="space-between"
         h="40%"
         p="8"
@@ -44,16 +47,31 @@ export function CityCard({
         borderBottomRightRadius="6"
       >
         <Flex direction="column" justify="space-around" fontFamily="Barlow">
-          <Text as="h4" fontSize="2xl" fontWeight="600" color="dark.900">
+          <Text
+            as="h4"
+            fontSize={['18px', '24px']}
+            fontWeight="600"
+            color="dark.900"
+          >
             {city}
           </Text>
-          <Text as="p" fontSize="18" color="dark.600" fontWeight="500">
+          <Text
+            as="p"
+            fontSize={['15px', '18px']}
+            color="dark.600"
+            fontWeight="500"
+          >
             {country}
           </Text>
         </Flex>
 
         <Flex h="100%" justify="center" align="center">
-          <Flex borderRadius="100%" overflow="hidden" h="55px" w="55px">
+          <Flex
+            borderRadius="100%"
+            overflow="hidden"
+            h={['45', '55px']}
+            w={['45px', '55px']}
+          >
             <Image h="100%" w="auto" src={countryFlagSRC} alt={country} />
           </Flex>
         </Flex>
