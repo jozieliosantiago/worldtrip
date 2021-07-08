@@ -9,7 +9,7 @@ export default function Continent() {
     <>
       <Header />
       <Flex
-        h={['25vh', '60vh']}
+        h={['25vh', '40vh', '50vh', '40vh', '60vh']}
         w="100%"
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
@@ -27,10 +27,10 @@ export default function Continent() {
         >
           <Text
             position={['relative', 'absolute']}
-            bottom={['auto', '20']}
-            left={['auto', '40']}
+            bottom={['auto', '10', '10', '10', '20']}
+            left={['auto', '10', '10', '10', '40']}
             as="h1"
-            fontSize={['30', 50]}
+            fontSize={['30', '50']}
             fontWeight="600"
             color="light.200"
           >
@@ -41,14 +41,18 @@ export default function Continent() {
 
       <Flex
         justify="space-between"
-        paddingLeft={['8', '40']}
-        paddingRight={['8', '40']}
-        paddingTop={['8', '20']}
-        paddingBottom={['8', '20']}
+        paddingLeft={['8', '10', '10', '10', '40']}
+        paddingRight={['8', '10', '10', '10', '40']}
+        paddingTop={['8', '10', '10', '10', '20']}
+        paddingBottom={['8', '10', '10', '10', '20']}
         w="100%"
-        direction={['column', 'row']}
+        direction={['column', 'column', 'column', 'column', 'row']}
       >
-        <Flex w={['100%', '45%']} alignItems="center" justify="center">
+        <Flex
+          w={['100%', '100%', '100%', '100%', '45%']}
+          alignItems="center"
+          justify="center"
+        >
           <Text
             textAlign="justify"
             fontSize={['14', '24']}
@@ -62,7 +66,7 @@ export default function Continent() {
         </Flex>
 
         <Flex
-          w={['100%', '45%']}
+          w={['100%', '100%', '100%', '100%', '45%']}
           justify="space-between"
           align="center"
           paddingTop={{
@@ -72,19 +76,19 @@ export default function Continent() {
           <Flex
             align={['flex-start', 'center']}
             direction="column"
-            margin={['0', '8']}
+            margin={['0', '0', '0', '0', '8']}
           >
             <Text
               as="h3"
               fontWeight="500"
-              fontSize={['30', '70']}
+              fontSize={['30', '60', '65', '80', '70']}
               color="golden.500"
             >
               50
             </Text>
             <Text
               as="p"
-              fontSize={['14', '26']}
+              fontSize={['14', '24', '30', '26']}
               color="dark.900"
               fontWeight={['normal', 'bold']}
             >
@@ -95,19 +99,19 @@ export default function Continent() {
           <Flex
             align={['flex-start', 'center']}
             direction="column"
-            margin={['0', '8']}
+            margin={['0', '0', '0', '0', '8']}
           >
             <Text
               as="h3"
               fontWeight="500"
-              fontSize={['30', '70']}
+              fontSize={['30', '60', '65', '80', '70']}
               color="golden.500"
             >
               60
             </Text>
             <Text
               as="p"
-              fontSize={['14', '26']}
+              fontSize={['14', '24', '30', '26']}
               color="dark.900"
               fontWeight={['normal', 'bold']}
             >
@@ -117,21 +121,22 @@ export default function Continent() {
           <Flex
             align={['flex-start', 'center']}
             direction="column"
-            margin={['0', '8']}
+            margin={['0', '0', '0', '0', '8']}
           >
             <Text
               as="h3"
               fontWeight="500"
-              fontSize={['30', '70']}
+              fontSize={['30', '60', '80', '70']}
               color="golden.500"
             >
               24
             </Text>
+
             <Flex justify="center" align="center">
               <Text
                 pr="1"
                 as="p"
-                fontSize={['14', '26']}
+                fontSize={['14', '24', '30', '26']}
                 color="dark.900"
                 fontWeight={['normal', 'bold']}
               >
@@ -147,21 +152,26 @@ export default function Continent() {
 
       <Flex
         w="100%"
-        pl={['8', '40']}
-        pr={['8', '40']}
+        pl={['8', '10', '10', '10', '40']}
+        pr={['8', '10', '10', '10', '40']}
         direction="column"
-        pb={['10', '20']}
+        pb={['10', '15', '16', '20']}
       >
-        <Text as="h2" color="dark.900" fontSize={['20', '40']}>
+        <Text as="h2" color="dark.900" fontSize={['20', '35', '40']}>
           Cidades +100
         </Text>
 
         <Grid
-          templateColumns={['repeat(1, 1fr)', 'repeat(4, 1fr)']}
-          pt={['5', '20']}
+          templateColumns={[
+            'repeat(1, 1fr)',
+            'repeat(2, 1fr)',
+            'repeat(3, 1fr)',
+            'repeat(4, 1fr)',
+          ]}
+          pt={['5', '10', '10', '20']}
           w="100%"
           gap={6}
-          rowGap={12}
+          rowGap={[5, 10, 10, 10, 12]}
         >
           <CityCard
             city="Londres"

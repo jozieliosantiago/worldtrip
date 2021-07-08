@@ -15,15 +15,15 @@ export function CityCard({
 }: CityCardProps) {
   return (
     <Flex
-      h="38vh"
-      w={['100%', '18vw']}
+      h={['20vh', '29vh', '28vh', '20vh', '38vh']}
+      w={['100%', '100%', '100%', '100%', '18vw']}
       direction="column"
       borderRadius="5"
       overflow="hidden"
       align="center"
     >
       <Flex
-        h="60%"
+        h={['60%', '55%', '50%']}
         w={['85%', '100%']}
         backgroundImage={cityImageURL}
         backgroundSize="100% auto"
@@ -32,10 +32,9 @@ export function CityCard({
       ></Flex>
 
       <Flex
-        // flex="1"
         w={['85%', '100%']}
         justify="space-between"
-        h="40%"
+        h={['40%', '45%', '40%']}
         p="8"
         borderLeft="solid 1px"
         borderLeftColor="golden.500"

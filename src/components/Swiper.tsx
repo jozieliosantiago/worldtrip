@@ -24,7 +24,7 @@ export function Swiper() {
           <Text
             as="h1"
             color="light.200"
-            fontSize={['30', '65']}
+            fontSize={['30', '40', '50', '65']}
             fontWeight={['normal', 'bold']}
           >
             {title}
@@ -32,7 +32,7 @@ export function Swiper() {
           <Text
             as="h2"
             color="light.300"
-            fontSize={['15', '25']}
+            fontSize={['15', '18', '20', '25']}
             fontWeight={['normal', 'bold']}
           >
             {subtitle}
@@ -60,7 +60,7 @@ export function Swiper() {
     >
       <SwiperSlide>
         <Flex
-          h={['25vh', '60vh']}
+          h={['25vh', '100%', '100%', '100%', '60vh']}
           justify="center"
           align="center"
           overflow="hidden"
@@ -88,7 +88,7 @@ export function Swiper() {
 
       <SwiperSlide>
         <Flex
-          h={['25vh', '60vh']}
+          h={['25vh', '100%', '100%', '100%', '60vh']}
           justify="center"
           align="center"
           overflow="hidden"
@@ -116,7 +116,7 @@ export function Swiper() {
 
       <SwiperSlide>
         <Flex
-          h={['25vh', '60vh']}
+          h={['25vh', '100%', '100%', '100%', '60vh']}
           justify="center"
           align="center"
           overflow="hidden"

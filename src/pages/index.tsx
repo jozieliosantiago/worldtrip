@@ -28,12 +28,12 @@ export default function Home() {
         backgroundSize="cover"
         w="100%"
         position="relative"
-        paddingLeft={['8', '40']}
-        paddingRight={['8', '40']}
+        paddingLeft={['8', '10', '10', '10', '40']}
+        paddingRight={['8', '10', '10', '10', '40']}
         paddingTop={['4', '8']}
         paddingBottom={['4', '8']}
         align="center"
-        h={['25vh', '46vh']}
+        h={['25vh', '30vh', '35vh', '30vh', '46vh']}
       >
         <Flex
           w="100%"
@@ -42,11 +42,11 @@ export default function Home() {
           position="relative"
           justify="center"
         >
-          <Text position="relative" fontSize={['25px', '48px']} as="h1">
+          <Text position="relative" fontSize={['25px', '40px', '48px']} as="h1">
             5 Continentes, infinitas possibilidades.
           </Text>
 
-          <Text pt="4" as="h5" fontSize={['16px', '24px']}>
+          <Text pt="4" as="h5" fontSize={['16px', '22px', '24px']}>
             Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
         </Flex>
@@ -67,9 +67,9 @@ export default function Home() {
 
       <Flex
         w="100%"
-        h={['22vh', '44vh']}
-        paddingLeft={['8', '40']}
-        paddingRight={['8', '40']}
+        h={['22vh', '30vh', '35vh', '40vh', '44vh']}
+        paddingLeft={['8', '10', '10', '10', '40']}
+        paddingRight={['8', '10', '10', '10', '40']}
         align="center"
         justify="space-between"
       >
@@ -116,18 +116,22 @@ export default function Home() {
         justify="center"
         direction="column"
         align="center"
-        paddingBottom={['5', '20']}
+        paddingBottom={['5', '10', '10', '10', '20']}
       >
         <Box
           w={['50px', '100px']}
-          mb={['20px', '60px']}
+          mb={['20px', '40px', '60px']}
           borderTop="solid"
           borderColor="dark.900"
           marginTop={['6']}
           border="1px"
         />
 
-        <Box textAlign="center" fontSize={['20px', '40px']} color="dark.900">
+        <Box
+          textAlign="center"
+          fontSize={['20px', '30px', '35px', '40px']}
+          color="dark.900"
+        >
           <Text as="h2">Vamos nessa?</Text>
           <Text as="h2">Então escolha seu continente</Text>
         </Box>
@@ -135,11 +139,11 @@ export default function Home() {
         <Box
           cursor="pointer"
           w="100%"
-          h={['25vh', '60vh']}
+          h={['25vh', '30vh', '40vh', '50vh', '60vh']}
           overflow="hidden"
           position="relative"
-          paddingLeft={['8', '40']}
-          paddingRight={['8', '40']}
+          paddingLeft={['8', '10', '10', '10', '40']}
+          paddingRight={['8', '10', '10', '10', '40']}
           marginTop="10"
         >
           <Swiper />
