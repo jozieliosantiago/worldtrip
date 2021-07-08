@@ -38,7 +38,6 @@ Execute os comandos:
 
 ```bash
 yarn
-
 yarn dev
 ```
 
