@@ -17,7 +17,7 @@
 
 # worldtrip
 
-O worldtrip é uma aplicação modelo de conteúdo de viagens. A aplicação foi criada a partir de um dos desafios do Ignite da Rocketseat. A aplicação foi criada para mostrar o uso do biblioteca <b> Chakra UI </b>, através de seus componentes de controle de responsividade que ela proporciona.
+O worldtrip é uma aplicação modelo de conteúdo de viagens. A aplicação foi criada a partir de um dos desafios do Ignite da Rocketseat. A aplicação foi criada para mostrar o uso do biblioteca <b> Chakra UI </b>, através de seus componentes e o controle de responsividade que ela proporciona.
 
 <p align="center">
   <img alt="worldtrip." src=".github/worldtrip.gif" width="100%">
